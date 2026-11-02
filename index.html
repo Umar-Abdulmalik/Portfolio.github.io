@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UMAR ABDULMALIK | Python Developer</title>
+  <meta name="description" content="Portfolio of Umar Abdulmalik, an aspiring Python developer and Aircraft Engineering student at AFIT, Kaduna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) { t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">UMAR ABDULMALIK</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-role">Python developer in training</p>
+          <h1><span class="line">UMAR</span> <span class="line">ABDULMALIK</span></h1>
+          <p class="hero-lead">
+            I’m an Aircraft Engineering student at AFIT, Kaduna. I build Python
+            tools with the same care aircraft maintenance demands: clear records,
+            tested work, and no guesswork.
+          </p>
+          <p class="now"><span class="dot" aria-hidden="true"></span>Currently building: a task manager in Python</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn" href="https://github.com/Dark-sha">GitHub profile</a>
+          </div>
+        </div>
+
+        <!-- Decorative cockpit window: friendly robot pilot and bouncing skill icons -->
+        <div class="stage" aria-hidden="true">
+          <span class="cloud c1"></span>
+          <span class="cloud c2"></span>
+
+          <span class="chip" data-say="Python is my main tool">Python</span>
+          <span class="chip alt" data-say="Learning Django next">Django</span>
+          <span class="chip" data-say="Every project goes on GitHub">Git</span>
+          <span class="chip alt" data-say="I build web pages too">HTML</span>
+          <span class="chip" data-say="Making it look good with CSS">CSS</span>
+          <span class="chip alt" data-say="Aircraft engineering is my field">&#9992;</span>
+          <span class="chip" data-say="I like knowing how things work">&#9881;</span>
+          <span class="chip alt" data-say="Clean code matters">&lt;/&gt;</span>
+
+          <div class="mascot">
+            <svg class="bot" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+              <!-- antenna -->
+              <line x1="100" y1="30" x2="100" y2="14" stroke="#0f2233" stroke-width="4" stroke-linecap="round"/>
+              <circle class="light" cx="100" cy="10" r="7" fill="#f2b705" stroke="#0f2233" stroke-width="3"/>
+              <!-- head -->
+              <rect x="40" y="30" width="120" height="104" rx="40" fill="#dfe7ee" stroke="#0f2233" stroke-width="4"/>
+              <!-- goggle strap -->
+              <rect x="40" y="62" width="120" height="14" fill="#f2b705" stroke="#0f2233" stroke-width="3"/>
+              <!-- eyes -->
+              <g class="eyes">
+                <circle cx="76" cy="92" r="22" fill="#ffffff" stroke="#0f2233" stroke-width="4"/>
+                <circle cx="124" cy="92" r="22" fill="#ffffff" stroke="#0f2233" stroke-width="4"/>
+                <g class="pupils">
+                  <circle cx="76" cy="92" r="9" fill="#0f2233"/>
+                  <circle cx="124" cy="92" r="9" fill="#0f2233"/>
+                  <circle cx="79" cy="88" r="3" fill="#ffffff"/>
+                  <circle cx="127" cy="88" r="3" fill="#ffffff"/>
+                </g>
+              </g>
+              <!-- smile -->
+              <path d="M82 120 Q100 134 118 120" fill="none" stroke="#0f2233" stroke-width="4" stroke-linecap="round"/>
+              <!-- legs -->
+              <rect x="72" y="204" width="20" height="24" rx="6" fill="#0f2233"/>
+              <rect x="108" y="204" width="20" height="24" rx="6" fill="#0f2233"/>
+              <rect x="66" y="224" width="32" height="12" rx="6" fill="#0f2233"/>
+              <rect x="102" y="224" width="32" height="12" rx="6" fill="#0f2233"/>
+              <!-- body -->
+              <rect x="58" y="136" width="84" height="72" rx="18" fill="#0f2233"/>
+              <text x="100" y="182" font-size="26" font-weight="800" fill="#f2b705" text-anchor="middle" font-family="Archivo, Arial, sans-serif">PY</text>
+              <!-- resting arm -->
+              <line x1="64" y1="152" x2="44" y2="188" stroke="#0f2233" stroke-width="13" stroke-linecap="round"/>
+              <circle cx="42" cy="192" r="9" fill="#dfe7ee" stroke="#0f2233" stroke-width="3"/>
+              <!-- waving arm -->
+              <g class="wave">
+                <line x1="136" y1="152" x2="166" y2="122" stroke="#0f2233" stroke-width="13" stroke-linecap="round"/>
+                <circle cx="170" cy="116" r="10" fill="#dfe7ee" stroke="#0f2233" stroke-width="3"/>
+              </g>
+            </svg>
+          </div>
+
+          <span class="bubble"></span>
+        </div>
+      </div>
+
+      <svg class="flightpath" viewBox="0 0 640 120" role="img"
+           aria-label="A flight path from today to a junior developer role">
+        <defs>
+          <mask id="reveal">
+            <rect class="reveal-rect" x="0" y="0" width="640" height="120" fill="#fff"/>
+          </mask>
+        </defs>
+        <path id="route" d="M24 96 C 180 96, 220 24, 360 40 S 560 70, 616 24"
+              fill="none" stroke="currentColor" stroke-width="2"
+              stroke-dasharray="6 8" stroke-linecap="round" mask="url(#reveal)"/>
+        <circle cx="24" cy="96" r="7" fill="currentColor"/>
+        <circle class="pulse" cx="616" cy="24" r="7" fill="none" stroke="var(--runway)" stroke-width="3"/>
+        <circle cx="616" cy="24" r="7" fill="var(--runway)" stroke="currentColor" stroke-width="2"/>
+        <g class="plane">
+          <path d="M14 0 L-10 -9 L-5 0 L-10 9 Z" fill="currentColor"/>
+          <animateMotion dur="3.2s" begin="0.6s" rotate="auto" fill="freeze"
+                         calcMode="linear" keyPoints="0;1" keyTimes="0;1">
+            <mpath href="#route"/>
+          </animateMotion>
+        </g>
+        <text x="24" y="116" font-size="14" fill="currentColor">Today</text>
+        <text x="616" y="52" font-size="14" fill="currentColor" text-anchor="end">Junior developer</text>
+      </svg>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2>About</h2>
+      <div class="prose">
+        <p>
+          I’m studying Aircraft Engineering Technology and teaching myself
+          software development with Python. Engineering taught me to work
+          step by step, check my results, and document what I do. I bring the
+          same habits to code.
+        </p>
+        <p>
+          I’m building a set of real projects, from command-line tools to a
+          Django web application, and sharing each one on GitHub as I finish
+          it. I’m looking for a junior role, internship, or freelance work
+          where I can keep learning and contribute.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><strong>Python</strong> Functions, classes, file handling</li>
+        <li><strong>Git &amp; GitHub</strong> Commits, repositories, pushing code</li>
+        <li><strong>HTML &amp; CSS</strong> Building and styling web pages</li>
+        <li><strong>Django</strong> Currently learning</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <p class="section-note">
+        Each project gets a README, tests, and a link to its code. Entries
+        show their real status.
+      </p>
+
+      <!-- Copy one <article> block for every new project you finish. -->
+      <article class="entry">
+        <h3>Task manager</h3>
+        <p>A command-line app to add, edit, search, and complete tasks, saved to a file.</p>
+        <dl>
+          <div><dt>Stack</dt><dd>Python, JSON, pytest</dd></div>
+          <div><dt>Status</dt><dd class="status status-active">In progress</dd></div>
+        </dl>
+        <a href="https://github.com/Dark-sha/task-manager">View code on GitHub</a>
+      </article>
+
+      <article class="entry">
+        <h3>Parts inventory system</h3>
+        <p>Tracks tools and aircraft parts in a database, with input checks and low-stock alerts.</p>
+        <dl>
+          <div><dt>Stack</dt><dd>Python, SQLite, pytest</dd></div>
+          <div><dt>Status</dt><dd class="status">Planned</dd></div>
+        </dl>
+      </article>
+
+      <article class="entry">
+        <h3>Aircraft maintenance tracker</h3>
+        <p>A web app for logging maintenance records, with login, search, and CSV export.</p>
+        <dl>
+          <div><dt>Stack</dt><dd>Python, Django, SQLite</dd></div>
+          <div><dt>Status</dt><dd class="status">Planned</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p class="section-note">
+        I’m open to junior roles, internships, and freelance projects.
+      </p>
+      <ul class="contact">
+        <li><a href="mailto:abdulmalikadeyiza633@gmail.com">abdulmalikadeyiza633@gmail.com</a></li>
+        <li><a href="https://github.com/Dark-sha">github.com/Dark-sha</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 UMAR ABDULMALIK. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
