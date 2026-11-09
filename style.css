@@ -125,7 +125,7 @@ h3 { margin: 0 0 .4rem; font-size: 1.25rem; font-weight: 700; }
   border-left: 6px solid var(--ink);
   padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
-}a
+}
 .entry p { margin: 0 0 1rem; max-width: 40em; }
 .entry dl { display: flex; gap: 2rem; flex-wrap: wrap; margin: 0 0 1rem; }
 .entry dl div { display: flex; flex-direction: column; }
@@ -133,6 +133,7 @@ h3 { margin: 0 0 .4rem; font-size: 1.25rem; font-weight: 700; }
 .entry dd { margin: 0; font-weight: 600; }
 .status { display: inline-block; }
 .status-active { background: var(--runway); padding: 0 .5rem; border-radius: 2px; }
+.status-done { background: #2ea44f; color: #ffffff; padding: 0 .5rem; border-radius: 2px; }
 
 /* Contact */
 .contact { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
