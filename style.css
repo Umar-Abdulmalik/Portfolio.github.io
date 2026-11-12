@@ -311,3 +311,11 @@ body, .site-header, .entry, .btn { transition: background-color .3s, color .3s, 
   .plane { opacity: 0; }
   .pulse { opacity: 0; }
 }
+
+/* Flagship project highlight */
+.entry-flagship { border-left-color: var(--runway); }
+.tag {
+  display: inline-block; margin-left: .5rem; padding: .1rem .6rem;
+  background: var(--runway); color: #0f2233;
+  font-size: .75rem; font-weight: 700; border-radius: 2px; vertical-align: middle;
+}
