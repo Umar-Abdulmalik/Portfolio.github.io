@@ -44,7 +44,7 @@
             tools with the same care aircraft maintenance demands: clear records,
             tested work, and no guesswork.
           </p>
-          <p class="now"><span class="dot" aria-hidden="true"></span>Just shipped: SkyLog, a Django aircraft maintenance tracker</p>
+          <p class="now"><span class="dot" aria-hidden="true"></span>Just shipped: SkyLog is live, with a real-time aircraft map</p>
           <div class="actions">
             <a class="btn btn-primary" href="#projects">View projects</a>
             <a class="btn" href="https://github.com/Umar-Abdulmalik">GitHub profile</a>
@@ -162,6 +162,7 @@
         <li><strong>Django</strong> Models, views, forms, login</li>
         <li><strong>SQL &amp; SQLite</strong> Queries, validation, databases</li>
         <li><strong>Testing</strong> pytest and Django tests</li>
+        <li><strong>APIs &amp; caching</strong> Live data feeds, rate limits, JSON</li>
       </ul>
     </section>
 
@@ -176,15 +177,20 @@
       <article class="entry entry-flagship">
         <h3>SkyLog: aircraft maintenance tracker <span class="tag">Flagship project</span></h3>
         <p>
-          A Django web app for tracking an aircraft fleet and its maintenance work.
-          It has a live dashboard with charts, overdue alerts, search and filters,
-          and a login-protected editor for adding and updating records.
+          A Django web app for tracking an aircraft fleet and its maintenance work,
+          with a real-time aircraft map. It has a dashboard with charts, overdue
+          alerts, search and filters, a login-protected editor, and a live map that
+          shares one cached data feed between all visitors.
         </p>
         <dl>
-          <div><dt>Stack</dt><dd>Python, Django, SQLite, HTML, CSS, JavaScript</dd></div>
-          <div><dt>Status</dt><dd class="status status-done">Completed</dd></div>
+          <div><dt>Stack</dt><dd>Python, Django, SQLite, JavaScript, Leaflet, HTML, CSS</dd></div>
+          <div><dt>Status</dt><dd class="status status-done">Live</dd></div>
         </dl>
-        <a href="https://github.com/Umar-Abdulmalik/SkyLog">View code on GitHub</a>
+        <p class="entry-links">
+          <a class="live-demo" href="https://abdulmalik101.pythonanywhere.com/" target="_blank" rel="noopener">Live demo</a>
+          <a href="https://abdulmalik101.pythonanywhere.com/map/" target="_blank" rel="noopener">Live aircraft map</a>
+          <a href="https://github.com/Umar-Abdulmalik/SkyLog">View code on GitHub</a>
+        </p>
       </article>
 
       <article class="entry">
